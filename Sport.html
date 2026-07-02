@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sport Chic Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="sport-title">Sport Chic Collection</h1>
+
+    <div class="dress-container">
+
+        <!-- Sport 1 -->
+        <div class="dress-card">
+            <span class="tag sport">SPORT</span>
+            <img src="https://i.pinimg.com/originals/fe/43/0b/fe430b48de73a06747f997403a919a28.jpg" class="dress-img">
+            <p class="dress-name">Sport Outfit 1</p>
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot white"></span>
+                <span class="dot blue"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">85,000 SYP</p>
+        </div>
+
+        <!-- Sport 2 -->
+        <div class="dress-card">
+            <span class="tag sport">NEW</span>
+            <img src="https://m.media-amazon.com/images/I/41F1Q5+p2ZL._AC_SY1000_.jpg" class="dress-img">
+            <p class="dress-name">Sport Outfit 2</p>
+            <div class="color-dots">
+                <span class="dot pink"></span>
+                <span class="dot black"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">95,000 SYP</p>
+        </div>
+
+        <!-- Sport 3 -->
+        <div class="dress-card">
+            <span class="tag sport">HOT</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRqryWZ1KAyA6NpYiIHM1B-wgI3bKocK8s5g&s" class="dress-img">
+            <p class="dress-name">Sport Outfit 3</p>
+            <div class="color-dots">
+                <span class="dot olive"></span>
+                <span class="dot black"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">110,000 SYP</p>
+        </div>
+
+        <!-- Sport 4 -->
+        <div class="dress-card">
+            <span class="tag sport">SPORT</span>
+            <img src="https://i.pinimg.com/736x/7f/3c/5c/7f3c5ca651ac23ed5b7b3139eb30c24d.jpg" class="dress-img">
+            <p class="dress-name">Sport Outfit 4</p>
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">220,000 SYP</p>
+        </div>
+
+        <!-- Sport 5 -->
+        <div class="dress-card">
+            <span class="tag sport">NEW</span>
+            <img src="https://zfloos-production-storage.s3.eu-central-1.amazonaws.com/public/upload/companies/4220/products/317810026556a27f19f79abb8_19299381_c_f2f5ef-f3f6f0-f8f8ef.webp" class="dress-img">
+            <p class="dress-name">Sport Outfit 5</p>
+            <div class="color-dots">
+                <span class="dot pink"></span>
+                <span class="dot white"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">400,000 SYP</p>
+        </div>
+
+        <!-- Sport 6 -->
+        <div class="dress-card">
+            <span class="tag sport">NEW</span>
+            <img src="https://zfloos-production-storage.s3.eu-central-1.amazonaws.com/public/upload/companies/4220/products/117808374676a256c5b7921a6_70201950_c_e9e2ed-eff9f6-eef7f7.webp" class="dress-img">
+            <p class="dress-name">Sport Outfit 6</p>
+            <div class="color-dots">
+                <span class="dot pink"></span>
+                <span class="dot white"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">350,000 SYP</p>
+        </div>
+
+        <!-- Sport 7-->
+        <div class="dress-card">
+            <span class="tag sport">NEW</span>
+            <img src="https://zfloos-production-storage.s3.eu-central-1.amazonaws.com/public/upload/companies/4220/products/1177289018869ac284cdf5754_23119264_c_f6f9f8-f2f8fd-ebdfc7.webp" class="dress-img">
+            <p class="dress-name">Sport Outfit 7</p>
+            <div class="color-dots">
+                <span class="dot pink"></span>
+                <span class="dot white"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">300,000 SYP</p>
+        </div>
+
+        <!-- Sport 8 -->
+        <div class="dress-card">
+            <span class="tag sport">NEW</span>
+            <img src="https://i.pinimg.com/736x/07/d3/e0/07d3e0f31aef36500e4a90937cc7900f.jpg" class="dress-img">
+            <p class="dress-name">Sport Outfit 8</p>
+            <div class="color-dots">
+                <span class="dot pink"></span>
+                <span class="dot white"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">250,000 SYP</p>
+        </div>
+
+        <script>
+            function togglePrice(element) {
+                const price = element.nextElementSibling;
+                price.classList.toggle("hidden");
+
+                if (price.classList.contains("hidden")) {
+                    element.textContent = "Click to show price";
+                } else {
+                    element.textContent = "Hide price";
+                }
+            }
+        </script>
+        <div class="magic-box">
+            <h3>لمسات آية ✨</h3>
+            <p>تألّقي مع أحدث التصاميم</p>
+            <div class="magic-icons">
+                <span>💜</span>
+                <span>✨</span>
+                <span>👗</span>
+                <span>🌸</span>
+                <a href="https://wa.me/963951975827" class="contact-btn">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR473tBBzODSEYWgURT_YLl-MjmdPAanLOU_A&s" class="whatsapp-icon"> تواصل معنا
+                </a>
+
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">رجوع</a>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evening Dresses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="page-title">Evening Dresses Collection</h1>
+
+    <div class="dress-container">
+        <span class="tag">NEW</span>
+
+        <!-- Dress 1 -->
+        <div class="dress-card">
+            <img src="https://cdn.salla.sa/zvDzZl/evaT4HoymVbwDUZn7ButZLBS5p73EEFSwKHYnUsC.jpg" class="dress-img">
+            <p class="dress-name">Dress 1</p>
+
+            <!-- دوائر الألوان -->
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot olive"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">650,000 SYP</p>
+        </div>
+
+        <!-- Dress 2 -->
+        <div class="dress-card">
+            <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcgE1lMi16KgBzB89NRjBHfbesU41_vd9G-sirba8uFxzBuI8vQpZm7wWtCOIEcf0MdYomZ2Vb2EY1KiWNk-3mbKnmf3JqleY6UHDHzgLdWbAhv97_FnKLkwSTxlS1pG2PaRAI0DgpMhHZssoEb-c8?key=hrrnPC52ZpJzN6v6Ptgt_w" class="dress-img">
+            <p class="dress-name">Dress 2</p>
+            <!-- دوائر الألوان -->
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot olive"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">950,000 SYP</p>
+        </div>
+
+        <!-- Dress 3 -->
+        <div class="dress-card">
+            <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfMe8YR6HO0akBA-_sieQXnLkqh5lFLbftvJYmavZz5Z01R8gvfXVMQ4wRWF3-xFj7IxXNNcUQWbI-N9XyZAb4JXRl8Al5ac3pfxxKH_o9Fnn3yTRgS7p8CFpJX4v3Oeznc49DgYw?key=cB13AZNfWWXPSyQluyDJ5g" class="dress-img">
+            <p class="dress-name">Dress 3</p>
+            <!-- دوائر الألوان -->
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot olive"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">1,000,000 SYP</p>
+        </div>
+
+        <!-- Dress 4 -->
+        <div class="dress-card">
+            <img src="https://cdn.salla.sa/gZdEvO/K6Kb0cHjtqjUNKbxHkuWayYfzmOackW3yMrhzDVY.png" class="dress-img">
+            <p class="dress-name">Dress 4</p>
+            <!-- دوائر الألوان -->
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot olive"></span>
+            </div>
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">1,100,000 SYP</p>
+        </div>
+
+        <!-- Dress 5 -->
+        <div class="dress-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoXVVNafsD3FnQxP2Q0Tq3EhAexBtvvr9ezQ&s" class="dress-img">
+            <p class="dress-name">Dress 5</p>
+            <!-- دوائر الألوان -->
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot olive"></span>
+            </div>
+
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">750,000 SYP</p>
+        </div>
+
+        <!-- Dress 6 -->
+        <div class="dress-card">
+            <img src="https://cdn.salla.sa/eRaaD/wYOxfANK3VK2Dns6rL2rwgCul1jdyAguBQoF9SDV.png" class="dress-img">
+            <p class="dress-name">Dress 6</p>
+            <!-- دوائر الألوان -->
+            <div class="color-dots">
+                <span class="dot black"></span>
+                <span class="dot purple"></span>
+                <span class="dot pink"></span>
+                <span class="dot olive"></span>
+            </div>
+
+            <p class="show-price" onclick="togglePrice(this)">Click to show price</p>
+            <p class="dress-price hidden">1,400,000 SYP</p>
+        </div>
+
+    </div>
+
+    <script>
+        function togglePrice(element) {
+            const price = element.nextElementSibling;
+            price.classList.toggle("hidden");
+
+            if (price.classList.contains("hidden")) {
+                element.textContent = "Click to show price";
+            } else {
+                element.textContent = "Hide price";
+            }
+        }
+    </script>
+    <a href="index.html" class="back-btn">رجوع</a>
+
+
+</body>
+
+</html>

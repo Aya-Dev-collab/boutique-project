@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boutique – Bags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="luxury-title">Bags Section – Luxury</h1>
+
+    <div class="container">
+
+        <!-- الكارد 1 -->
+        <div class="card">
+            <img src="https://www.garderobeitaly.com/wp-content/uploads/2023/05/IMG_0278.jpg" alt="">
+            <p>Bag 1</p>
+
+            <button class="show-price-btn" onclick="togglePrice(this)">Click</button>
+            <p class="price hidden">55,000 SYP</p>
+        </div>
+
+        <!-- الكارد 2 -->
+        <div class="card">
+            <img src="https://www.yasmina.com/tachyon/sites/5/2022/02/7a4737abdcb844b43f06f9a2927f60128f4388e6-1.jpg?resize=700%2C792&crop_strategy=smart&quality=60" alt="
+            <p>Bag 2</p>
+
+            <button class=" show-price-btn " onclick="togglePrice(this) ">Click</button>
+            <p class="price hidden ">60,000 SYP</p>
+        </div>
+
+        <!-- الكارد 3 -->
+        <div class="card ">
+            <img src="https://cdn.salla.sa/OdKmr/CXnSpJq8tlCyxiexkto3cLNA98TwKofGUUn9aKzG.jpg " alt=" ">
+            <p>Bag 3</p>
+
+            <button class="show-price-btn " onclick="togglePrice(this) ">Click</button>
+            <p class="price hidden ">50,000 SYP</p>
+        </div>
+
+        <!-- الكارد 4 -->
+        <div class="card ">
+            <img src="https://ounass-sa.atgcdn.ae/small_light(of=webp,q=90)/pub/media/catalog/product/2/1/216520312_pink_in.jpg?ts=1690448154.2089 " alt=" ">
+            <p>Bag 4</p>
+
+            <button class="show-price-btn " onclick="togglePrice(this) ">Click</button>
+            <p class="price hidden ">45,000 SYP</p>
+        </div>
+
+        <!-- الكارد 5 -->
+        <div class="card ">
+            <img src="https://cdn.salla.sa/ZYPlpY/8df2973e-1d87-4f7e-abe6-e365f0eb1411-1000x957.41556534508-hE1lgIvgdv68cdmkZxi0q2Bfwk9nf330wzVXAtPL.jpg " alt=" ">
+            <p>Bag 5</p>
+
+            <button class="show-price-btn " onclick="togglePrice(this) ">Click</button>
+            <p class="price hidden ">70,000 SYP</p>
+        </div>
+
+        <!-- الكارد 6 -->
+        <div class="card ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSreqp65E6RXcIovvVGt5CUhaCZ_EYobKsl6yj7Y5fDwQ&s " alt=" ">
+            <p>Bag 6</p>
+
+            <button class="show-price-btn " onclick="togglePrice(this) ">Click</button>
+            <p class="price hidden ">65,000 SYP</p>
+        </div>
+
+    </div>
+
+    <script>
+        function togglePrice(element) {
+            const price = element.nextElementSibling;
+
+            price.classList.toggle("hidden ");
+
+            if (price.classList.contains("hidden ")) {
+                element.textContent = "Click ";
+            } else {
+                element.textContent = "Hide ";
+            }
+        }
+    </script>
+        <a href="index.html " class="back-btn ">رجوع</a>
+</body>
+
+</html>
