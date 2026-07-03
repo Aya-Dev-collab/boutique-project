@@ -68,17 +68,15 @@
         </div>
 
     </div>
-
-    <script>
+ <script>
         function togglePrice(element) {
             const price = element.nextElementSibling;
+            price.classList.toggle("hidden");
 
-            price.classList.toggle("hidden ");
-
-            if (price.classList.contains("hidden ")) {
-                element.textContent = "Click ";
+            if (price.classList.contains("hidden")) {
+                element.textContent = "Click to show price";
             } else {
-                element.textContent = "Hide ";
+                element.textContent = "Hide price";
             }
         }
     </script>
